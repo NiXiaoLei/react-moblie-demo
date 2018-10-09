@@ -11,7 +11,7 @@ class Router extends Component {
       <Provider store={store}>
         <HashRouter>
           <Switch>
-            <Route path="/admin" exact component={Answer}></Route>
+            <Route path="/" exact component={Answer}></Route>
           </Switch>
         </HashRouter>
       </Provider>
