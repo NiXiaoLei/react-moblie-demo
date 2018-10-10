@@ -11,17 +11,12 @@ class Router extends Component {
       <Provider store={store}>
         <HashRouter>
           <Switch>
-            <Route path="/" exact component={Answer}></Route>
+            <Route path="/" exact component={Answer} ></Route>
           </Switch>
         </HashRouter>
       </Provider>
     );
   }
-
-
-
-
-
 }
 
 export default Router;

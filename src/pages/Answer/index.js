@@ -1,16 +1,9 @@
-import React, { Component,  } from 'react'
-import XSwiper from '../../components/swiper'
-import XTest from '../test'
-class Answer extends Component {
-  render() {
-    return (
-      <XSwiper> 
-        <XTest />
-        <XTest />
-        <XTest />
-      </XSwiper>
-    )
-  }
-}
+import React from 'react'
+import Loadable from 'react-loadable';
+import PublicLoading from '../../components/Loading'
+const LoadableComponent = Loadable({
+  loader:() => import('./Answer'),
+  loading:() => <PublicLoading />
+})
 
-export default Answer
+export default () => <LoadableComponent/>
